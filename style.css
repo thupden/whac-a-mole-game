@@ -1,0 +1,132 @@
+html{
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+body{
+    margin: 0px;
+}
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.square{
+    width: 33.3%;
+    height: 22vh;
+    border: 1px solid;
+    border-color: rgb(183, 233, 103);
+    border-radius: 5px;
+}
+
+.main-block{
+    width: 100%;
+    height: 100vh;
+    background-image: url(whacImage/main-background.jpg);
+    background-size: cover;
+    margin:0px;
+    padding-top: 1vh;
+}
+.heading-block{
+    width:75%;
+    margin: 0vh auto 0vh auto;
+    border-radius: 5px;
+    background-color: rgb(88, 117, 223);
+    opacity: 0.9
+}
+.heading-block h1{
+    text-align: center;
+    font-size: 6vh;
+    color:antiquewhite;
+    margin:0px;
+    padding: 2vh;
+}
+.score-grid{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.score-grid div{
+    width:50%;
+    background-color: rgb(88, 117, 223);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    font-size: 2.5vh;
+    padding-bottom:1vh;
+}
+.score-grid div button{
+    background-color: red;
+    color: white;
+    width: 50%;
+    font-size: 2.5vh;
+    border-radius: 10px;
+    padding: 2%;
+}
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: grey;
+    opacity: 0.8;
+    width: 75%;
+    margin: 0vh auto 0vh auto;
+}
+.mole{
+    background-image: url("whacImage/mouse.jpg");
+    background-size: cover;
+}
+
+#final-score{
+    display: none;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 15vh;
+    left: 25%;
+    z-index: 1;
+    background-color:grey;
+    border-radius: 10px;
+    padding: 1vh 2% 1vh 2%;
+}
+#final-score div{
+    margin: 0px;
+    background-color: white;
+    text-align: center;
+    padding:50px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+#final-score button{
+    background-color: red;
+    color: white;
+    width: 40%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 650px)
+{
+    .heading-block{
+        width: 95%;
+    }
+    .grid{
+        width: 95%;
+    }
+    .score-grid div button{
+        width: 80%;
+    }
+    .heading-block h1{
+        font-size: 5vh;
+    }
+    .score-grid div{
+        font-size: 2.3vh;
+    }
+    #final-score{
+        width: 80%;
+        left:10%;
+        top: 30vh;
+    }
+}

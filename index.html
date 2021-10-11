@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whac-a-mole</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main sectiion -->
+    <div class="main-block">
+         <!-- Modal -->
+         <div id="final-score">
+            <div>
+                <p>Time up!</p>
+                <h2>Your score: <span id="modal-score">0</span></h2>
+                <button id="home">Home</button>
+                <button id="close">Close</button>
+            </div>
+        </div>
+        <!-- heading block -->
+        <div class ="heading-block">
+            <audio src="audio/alexander-nakarada-silly-intro.mp3" id="back-audio" loop></audio>
+            <audio src="audio/mixkit-small-win-2020.wav" id="game-over"></audio>
+            <h1>Whac a mole!</h1>
+            <div class="score-grid">
+                <div>
+                    <h2>Your score: <span id="score">0</span></h2>
+                </div>
+               <div>
+                    <h2>Time Left: <span id="time-left">30</span></h2>
+               </div>
+               <div>
+                <button type="submit" id="start">Start Game</button>
+               </div>
+                <div>
+                    <button type="submit" id="quit">Quit Game</button>
+                </div>
+            </div>
+           
+        </div>
+        <div class="grid">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+         </div>
+              
+    </div>
+     
+<script src = "app.js" charset="utf-8"></script>
+</body>
+</html>
